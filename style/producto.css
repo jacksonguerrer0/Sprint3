@@ -58,12 +58,77 @@ body {
 /*Diseño para el main*/
 #main{
     width: 80%;
-    min-height: 70vh;
+    min-height: 75vh;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
+    grid-template-columns:1fr 2fr;
     color: var(--color);
+    margin: 40px 0;
+    gap: 1em;
 }
+#categoria{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    
+}
+#categoria a {
+    text-decoration: none;
+    background-color: var(--backImp);
+    padding: 20px;
+    color: var(--colorImp);
+    border: 3px solid var(--backImp);
+}
+#categoria a:hover{
+    background-color: var(--colorImp);
+    color: var(--backImp);
+}
+#productos{
+    grid-column: 2/4;
+}
+#dulce {
+    border-bottom: 2px double var(--backImp);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    gap: 1em;
+}
+#torta {
+    border-bottom: 2px double var(--backImp);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    gap: 1em;
+}
+.target{
+    background-color: var(--colorImp);
+    border-radius: 10px;
+    padding: 10px;
+}
+.target img {
+    width: 120px;
+    height: 150px;
+    border-radius: 10px;
+    border: 3px solid var(--backImp);
+}
+.target button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.target button:hover{
+    background-color: var(--backImp);
+    color: var(--colorImp);
+}
+@media (max-width: 700px) {
+    #main{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+
 
 
 

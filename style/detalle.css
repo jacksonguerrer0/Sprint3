@@ -58,45 +58,16 @@ body {
 /*Diseño para el main*/
 #main{
     width: 80%;
-    min-height: 80vh;
+    min-height: 75vh;
     display: grid;
-    grid-template-rows: repeat(4, 80px);
+    grid-template-columns:1fr 2fr;
     color: var(--color);
-    text-align: center;
-    margin-top: 40px;
-}
-/*Lista carrito de compras*/
-.mainTitle{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    margin: 40px 0;
     gap: 1em;
 }
-.lisPay{
-    width: 100%;
-    border-top: 2px double var(--backImp);
-    overflow-y: auto;
-    grid-row: 2/5;
-}
-.lisPay p{
-    margin: auto;
-}
-.list{
-    border-top: 2px double var(--backImp) ;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
-}
-.lisPay img{
-    width: 80px;
-    margin: auto;
-}
-.pay {
-    width: 100%;
-    text-align: right;
-    border-top: 2px double var(--backImp);
-}
+
+
+
 
 /*Diseños del footer*/
 #footer{

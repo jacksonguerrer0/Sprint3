@@ -58,46 +58,50 @@ body {
 /*Diseño para el main*/
 #main{
     width: 80%;
-    min-height: 80vh;
-    display: grid;
-    grid-template-rows: repeat(4, 80px);
+    min-height: 75vh;
     color: var(--color);
     text-align: center;
-    margin-top: 40px;
+    margin: 40px 0;
 }
-/*Lista carrito de compras*/
-.mainTitle{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
-}
-.lisPay{
-    width: 100%;
-    border-top: 2px double var(--backImp);
-    overflow-y: auto;
-    grid-row: 2/5;
-}
-.lisPay p{
+#form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 300px;
+    height: 350px;
+    justify-content: center;
     margin: auto;
+    background-color: var(--colorImp);
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid var(--backImp);
 }
-.list{
-    border-top: 2px double var(--backImp) ;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
+#form input{
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
 }
-.lisPay img{
-    width: 80px;
-    margin: auto;
+#form div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
-.pay {
-    width: 100%;
-    text-align: right;
-    border-top: 2px double var(--backImp);
+#vencimiento{
+    width: 60%;
 }
-
+#codigo{
+    width: 30%;
+}
+#form button{
+    width: 30%;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+#form button:hover{
+    background-color: var(--backImp);
+    color: var(--colorImp);
+}
 /*Diseños del footer*/
 #footer{
     width: 100%;

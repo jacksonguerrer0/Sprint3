@@ -58,7 +58,7 @@ body {
 /*Diseño para el main*/
 #main{
     width: 80%;
-    min-height: 70vh;
+    min-height: 81vh;
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 3;
