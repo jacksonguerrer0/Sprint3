@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorImp: #f1cf91;
+    --backImp: #3b1d17;
+    --back: #e6dad8;
+    --color: rgb(41, 41, 41);
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--back);
+}
+#container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+#navbar{
+    height: 20%;
+    width: 100%;
+    background-color: var(--backImp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+#nav {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#navbar  img{
+    width: 50px;
+    margin-top: 3px;
+}
+#nav a{
+    text-decoration: none;
+    color: var(--colorImp);
+    padding: 10px;
+    padding-bottom: 2px;
+    margin: 5px;
+}
+#nav a img{
+    width: 25px;
+}
+#nav a:hover{
+    border-bottom: 2px double var(--colorImp);
+}
+
+/*Diseño para el main*/
+#main{
+    width: 80%;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    color: var(--color);
+}
+
+
+
+
+/*Diseños del footer*/
+#footer{
+    width: 100%;
+    height: 10%;
+    background-color: var(--backImp);
+    color: var(--colorImp);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#footerImg{
+    text-align: center;
+}
+#footerImg img{
+    width: 50%;
+    padding: 20px;
+}
+#footerDescription{
+    width: 70%;
+    text-align: justify;
+}
