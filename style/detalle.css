@@ -59,16 +59,42 @@ body {
 #main{
     width: 80%;
     min-height: 75vh;
-    display: grid;
-    grid-template-columns:1fr 2fr;
     color: var(--color);
     margin: 40px 0;
-    gap: 1em;
+}
+#mainContent{
+    display: flex;
+    flex-flow: row wrap;
+    border-top: 3px solid var(--backImp);
+    border-bottom: 3px solid var(--backImp);
+    align-items: center;
+    justify-content: center;
+}
+#info {
+    width: 60%;
+    height: 100%;
+    text-align: center;
 }
 
-
-
-
+#img img {
+    width: 200px;
+    height: 300px;
+}
+.opcion{
+    margin-top: 50px;
+}
+.opcion input{
+    padding: 4px;
+    width: 40px;
+}
+.opcion button{
+    padding: 4px;
+    width: 120px;
+}
+.opcion button:hover{
+    background-color: var(--backImp);
+    color: var(--colorImp);
+}
 /*Diseños del footer*/
 #footer{
     width: 100%;
