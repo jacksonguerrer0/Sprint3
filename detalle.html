@@ -12,7 +12,7 @@
         <nav id="navbar">
             <a href="index.html"><img src="img/logo.png" alt=""></a>
             <div id="nav">
-                <a href="productos.html">Productos</a>
+                <a href="producto.html">Productos</a>
                 <a href="#">Contacto</a>
                 <a href="carrito.html"><img src="img/carroCompra.png" alt=""></a>
             </div>
@@ -20,13 +20,14 @@
         <main id="main">
             <div id="mainContent">
                 <div id="img">
-                <img src="img/tortas.jpg" alt="">
+                <img src="" alt="" id="imagenP">
                 </div>
                 <div id="info">
-                    <h2>Nombre del producto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam tempora corrupti architecto unde nulla debitis soluta labore aperiam maxime.</p>
+                    <h2 id="nombreP"></h2>
+                    <p id="descripcionP"></p>
+                    <p id="precioP"></p>
                 <div class="opcion">
-                    <input type="number" placeholder="0" id="añadirNumero" min="0">
+                    <input type="number" placeholder="1" id="añadirNumero" min="1">
                     <button id="añadir">Añadir al carrito</button>
                 </div>
                 </div>
@@ -42,5 +43,6 @@
             </div>
         </footer>
     </div>
+    <script src="script/detalle.js"></script>
 </body>
 </html>

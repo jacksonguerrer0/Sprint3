@@ -102,6 +102,16 @@ body {
     background-color: var(--backImp);
     color: var(--colorImp);
 }
+#borrar{
+    text-align: center;
+    width: 70px;
+    padding: 2%;
+    border-radius: 5px;
+}
+#borrar:hover{
+    background-color: var(--backImp);
+    color: var(--colorImp);
+}
 /*Diseños del footer*/
 #footer{
     width: 100%;

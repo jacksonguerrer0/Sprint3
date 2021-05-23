@@ -121,3 +121,14 @@ body {
     width: 70%;
     text-align: justify;
 }
+#pagar{
+    text-align: center;
+    width: 60px;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+#pagar:hover{
+    background-color: var(--backImp);
+    color: var(--colorImp);
+}
